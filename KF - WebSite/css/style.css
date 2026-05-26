@@ -1,0 +1,401 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GERAL */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #f5f7ff;
+    color: #1f2937;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    padding: 24px 16px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar__logo,
+.sidebar__logo:visited,
+.sidebar__logo:hover,
+.sidebar__logo h1 {
+    color: #6d28d9;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.sidebar__title {
+  color: #6d28d9;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sidebar__subtitle {
+  color: #64748b;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.sidebar__menu {
+    list-style: none;
+    margin-top: 32px;
+}
+
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    text-decoration: none;
+    color: #4b5563;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.sidebar__link:hover {
+    background-color: #ede9fe;
+    color: #6d28d9;
+}
+
+.sidebar__link--active {
+    background-color: #6d28d9;
+    color: white;
+}
+/* SUPPORT CARD */
+
+.sidebar__support {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.sidebar__support-title {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.sidebar__support-button {
+    border: none;
+    background: none;
+    color: #6d28d9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* LAYOUT */
+
+.layout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+}
+
+/* TOPBAR */
+
+.topbar {
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.topbar__title {
+    font-size: 2rem;
+    color: #6d28d9;
+}
+
+.topbar__right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* SEARCH */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f3f4f6;
+    padding: 10px 14px;
+    border-radius: 999px;
+}
+
+.search-form__input {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+/* PERFIL */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile__name {
+    font-weight: bold;
+}
+
+.profile__role {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.profile__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* HERO */
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    padding: 40px;
+}
+
+.card-glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.hero__badge {
+    background-color: #ede9fe;
+    color: #6d28d9;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.hero__description {
+    color: #6b7280;
+    max-width: 600px;
+}
+
+.hero__progress {
+    background-color: #6d28d9;
+    color: white;
+    padding: 32px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__progress-label {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.hero__progress-value {
+    font-size: 3rem;
+}
+
+.hero__progress-text {
+    margin-top: 16px;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #d1d5db;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-bar__fill {
+    height: 100%;
+    background-color: #22c55e;
+}
+
+.progress-bar__fill--68 {
+    width: 68%;
+}
+
+.progress-bar__fill--85 {
+    width: 85%;
+}
+
+.progress-bar__fill--42 {
+    width: 42%;
+}
+
+.progress-bar__fill--92 {
+    width: 92%;
+}
+
+/* COURSES */
+
+.courses {
+    padding: 0 40px 40px;
+}
+
+.courses__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.courses__title {
+    font-size: 2rem;
+}
+
+.courses__subtitle {
+    color: #6b7280;
+}
+
+.courses__button {
+    border: none;
+    background: none;
+    color: #6d28d9;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.courses__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/* COURSE CARD */
+
+.course-card {
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card__content {
+    padding: 24px;
+}
+
+.course-card__title {
+    margin-bottom: 10px;
+}
+
+.course-card__description {
+    color: #6b7280;
+    margin-bottom: 24px;
+}
+
+.course-card__progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: auto;
+    padding: 40px;
+    background-color: white;
+    border-top: 1px solid #dbe1ea;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer__logo {
+    color: #6d28d9;
+    margin-bottom: 16px;
+}
+
+.footer__description {
+    color: #6b7280;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__list li {
+    margin-bottom: 12px;
+}
+
+.footer__list a {
+    text-decoration: none;
+    color: #4b5563;
+}
+
+.footer__list a:hover {
+    color: #6d28d9;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 992px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

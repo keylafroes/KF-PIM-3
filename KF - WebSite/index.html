@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tech Academy</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+    
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="sidebar__logo">
+            <h1 class="sidebar__title">Tech Academy</h1>
+            <p class="sidebar__subtitle">Plataforma de Estudos</p>
+        </a>
+
+        <nav class="sidebar__navigation" aria-label="Menu lateral">
+
+            <ul class="sidebar__menu">
+
+                <li>
+                    <a href="index.html" class="sidebar__link sidebar__link--active">
+                        <span class="material-symbols-outlined">home</span>
+                        Tela Inicial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cursos.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">school</span>
+                        Meus Cursos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="desempenho.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">analytics</span>
+                        Notas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="forum.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">forum</span>
+                        Fórum
+                    </a>
+                </li>
+
+                <li>
+                    <a href="configuracao.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">settings</span>
+                        Configurações
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <section class="sidebar__support">
+
+            <h2 class="sidebar__support-title">
+                Suporte
+            </h2>
+
+            <button class="sidebar__support-button">
+                Central de Ajuda
+            </button>
+
+        </section>
+
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="layout">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <section class="topbar__left">
+                <h2 class="topbar__title">Painel do Aluno</h2>
+            </section>
+
+            <section class="topbar__right">
+
+                <form class="search-form">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <input
+                        type="search"
+                        class="search-form__input"
+                        placeholder="Buscar matérias..."
+                    >
+
+                </form>
+
+                <article class="profile">
+
+                    <div class="profile__info">
+                        <p class="profile__name">
+                            Maria Cecilia
+                        </p>
+
+                        <p class="profile__role">
+                            Desenvolvedora Sênior
+                        </p>
+                    </div>
+
+                    <img
+                        src="https://images.pexels.com/photos/30468665/pexels-photo-30468665.jpeg"
+                        alt="Foto do usuário"
+                        class="profile__image"
+                    >
+                </article>
+
+            </section>
+
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <article class="hero__content card-glass">
+
+                <span class="hero__badge">
+                    Tech Academy
+                </span>
+
+                <h2 class="hero__title">
+                    Acelere sua carreira no setor público.
+                </h2>
+
+                <p class="hero__description">
+                    Domine as tecnologias mais exigidas nos concursos de TI
+                    com nossa metodologia focada em alto desempenho.
+                </p>
+
+            </article>
+
+            <article class="hero__progress">
+
+                <div>
+                    <p class="hero__progress-label">
+                        SEU PROGRESSO GERAL
+                    </p>
+
+                    <h3 class="hero__progress-value">
+                        68%
+                    </h3>
+                </div>
+
+                <div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress-bar__fill progress-bar__fill--68">
+                        </div>
+
+                    </div>
+
+                    <p class="hero__progress-text">
+                        Você concluiu 4 dos 6 módulos essenciais.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- CURSOS -->
+        <section class="courses">
+
+            <header class="courses__header">
+
+                <div>
+                    <h2 class="courses__title">
+                        Matérias
+                    </h2>
+
+                    <p class="courses__subtitle">
+                        Continue de onde você parou.
+                    </p>
+                </div>
+
+                <button class="courses__button">
+                    Ver Todas
+                </button>
+
+            </header>
+
+            <div class="courses__grid">
+
+                <!-- CARD -->
+                <article class="course-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+                        alt="Curso de C#"
+                        class="course-card__image"
+                    >
+
+                    <div class="course-card__content">
+
+                        <h3 class="course-card__title">
+                            C# Avançado
+                        </h3>
+
+                        <p class="course-card__description">
+                            .NET Core, LINQ e arquitetura de sistemas.
+                        </p>
+
+                        <div class="course-card__progress">
+
+                            <div class="course-card__progress-info">
+                                <span>Progresso</span>
+                                <span>85%</span>
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-bar__fill progress-bar__fill--85">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD -->
+                <article class="course-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558655146-d09347e92766"
+                        alt="Curso de UI UX"
+                        class="course-card__image"
+                    >
+
+                    <div class="course-card__content">
+
+                        <h3 class="course-card__title">
+                            UI/UX Design
+                        </h3>
+
+                        <p class="course-card__description">
+                            Heurísticas, acessibilidade e design systems.
+                        </p>
+
+                        <div class="course-card__progress">
+
+                            <div class="course-card__progress-info">
+                                <span>Progresso</span>
+                                <span>42%</span>
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-bar__fill progress-bar__fill--42">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD -->
+                <article class="course-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                        alt="Curso de Engenharia de Software"
+                        class="course-card__image"
+                    >
+
+                    <div class="course-card__content">
+
+                        <h3 class="course-card__title">
+                            Engenharia de Software
+                        </h3>
+
+                        <p class="course-card__description">
+                            Metodologias ágeis e qualidade de software.
+                        </p>
+
+                        <div class="course-card__progress">
+
+                            <div class="course-card__progress-info">
+                                <span>Progresso</span>
+                                <span>92%</span>
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-bar__fill progress-bar__fill--92">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <section class="footer__about">
+
+                <h2 class="footer__logo">
+                    Tech Academy
+                </h2>
+
+                <p class="footer__description">
+                    Capacitando estudantes com tecnologia moderna.
+                </p>
+
+            </section>
+
+            <nav class="footer__navigation" aria-label="Links do rodapé">
+
+                <ul class="footer__list">
+
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Contato</a></li>
+
+                </ul>
+
+            </nav>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
