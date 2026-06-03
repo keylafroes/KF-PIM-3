@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel do Coordenador | Tech Academy</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- MATERIAL ICONS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/coordenador_style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="topbar__brand">
+
+            <h1 class="topbar__logo">
+                Tech Academy
+            </h1>
+
+            <p class="topbar__subtitle">
+                Painel do Coordenador
+            </p>
+
+        </div>
+
+        <div class="topbar__actions">
+
+            <form class="search-form">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input
+                    type="search"
+                    class="search-form__input"
+                    placeholder="Buscar aluno..."
+                >
+
+            </form>
+
+            <article class="profile">
+
+                <div class="profile__info">
+
+                    <strong class="profile__name">
+                        Ana Carolina
+                    </strong>
+
+                    <span class="profile__role">
+                        Coordenadora Acadêmica
+                    </span>
+
+                </div>
+
+                <img
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="Foto da coordenadora"
+                    class="profile__image"
+                >
+
+                <button id="exit__button" class="profile__logout">
+                    <span class="material-symbols-outlined">
+                        exit_to_app
+                    </span>
+                </button>
+
+            </article>
+
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="dashboard">
+
+        <!-- TÍTULO -->
+        <section class="dashboard-header">
+
+            <h2 class="dashboard-header__title">
+                Métricas dos Alunos
+            </h2>
+
+        </section>
+
+        <!-- FILTROS -->
+        <section class="dashboard-filters">
+
+            <div class="filter-box">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Nome completo do estudante"
+                    class="filter-box__input"
+                >
+
+            </div>
+
+            <div class="filter-box">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <select class="filter-box__select">
+
+                    <option>
+                        Matéria
+                    </option>
+
+                    <option>
+                        Engenharia de Software
+                    </option>
+
+                    <option>
+                        UI/UX
+                    </option>
+
+                    <option>
+                        POO
+                    </option>
+
+                    <option>
+                        Matemática
+                    </option>
+
+                    <option>
+                        Desenvolvimento Web
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+        <!-- GRÁFICO -->
+        <section class="chart-section">
+
+            <div class="chart-section__y-axis">
+
+                <span>
+                    Notas (0 a 10)
+                </span>
+
+            </div>
+
+            <div class="chart-container">
+
+                <div class="chart-placeholder">
+
+                    <span class="material-symbols-outlined">
+                        monitoring
+                    </span>
+
+                    <h3>
+                        Gráfico de Desempenho
+                    </h3>
+
+                    <p>
+                        Média de desempenho dos estudantes por matéria.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LEGENDA -->
+        <section class="chart-footer">
+
+            <div class="chart-footer__line"></div>
+
+            <p class="chart-footer__label">
+                Matérias
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__content">
+
+            <nav class="footer__links">
+
+                <h3>
+                    Suporte / Ajuda
+                </h3>
+
+                <a href="#">
+                    Central de ajuda
+                </a>
+
+                <a href="#">
+                    Fórum de dúvidas
+                </a>
+
+            </nav>
+
+            <nav class="footer__links">
+
+                <h3>
+                    Informações do sistema
+                </h3>
+
+                <a href="#">
+                    Sobre a plataforma
+                </a>
+
+                <a href="#">
+                    Termos de uso
+                </a>
+
+                <a href="#">
+                    Política de privacidade
+                </a>
+
+            </nav>
+
+            <nav class="footer__links">
+
+                <h3>
+                    Conta
+                </h3>
+
+                <a href="#">
+                    Meu perfil
+                </a>
+
+                <a href="#">
+                    Configurações
+                </a>
+
+                <a href="#">
+                    Sair
+                </a>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/coordenador.js"></script>
+
+</body>
+
+</html>

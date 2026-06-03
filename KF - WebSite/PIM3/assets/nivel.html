@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tech Academy</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="sidebar__logo">
+            <h1 class="sidebar__title">Tech Academy</h1>
+            <p class="sidebar__subtitle">Plataforma de Estudos</p>
+        </a>
+
+        <nav class="sidebar__navigation" aria-label="Menu lateral">
+
+            <ul class="sidebar__menu">
+
+                <li>
+                    <a href="index.html" class="sidebar__link sidebar__link--active">
+                        <span class="material-symbols-outlined">home</span>
+                        Tela Inicial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cursos.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">school</span>
+                        Meus Cursos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="desempenho.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">analytics</span>
+                        Notas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="forum.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">forum</span>
+                        Fórum
+                    </a>
+                </li>
+
+                <li>
+                    <a href="configuracao.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">settings</span>
+                        Configurações
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <section class="sidebar__support">
+
+            <h2 class="sidebar__support-title">
+                Suporte
+            </h2>
+
+            <button class="sidebar__support-button">
+                Central de Ajuda
+            </button>
+
+        </section>
+
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="layout">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <section class="topbar__left">
+                <h2 class="topbar__title">Painel do Estudante</h2>
+            </section>
+
+            <section class="topbar__right">
+
+                <form class="search-form">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <input
+                        type="search"
+                        class="search-form__input"
+                        placeholder="Buscar matérias..."
+                    >
+
+                </form>
+
+                <article class="profile">
+
+                    <div class="profile__info">
+                        <p class="profile__name">
+                            Maria Cecilia
+                        </p>
+
+                        <p class="profile__role">
+                            Desenvolvedora Sênior
+                        </p>
+                    </div>
+
+                    <img
+                        src="https://images.pexels.com/photos/30468665/pexels-photo-30468665.jpeg"
+                        alt="Foto do usuário"
+                        class="profile__image"
+                    >
+                </article>
+
+            </section>
+
+        </header>
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <!-- Hero -->
+    <section class="hero">
+
+      <a href="#" class="hero__back-link">
+        <span class="material-symbols-outlined">
+          arrow_back
+        </span>
+
+        Voltar aos Cursos
+      </a>
+
+      <h2 class="hero__title">
+        C# Avançado
+      </h2>
+
+      <p class="hero__description">
+        Escolha seu nível de desafio para iniciar a jornada de maestria em programação orientada a objetos e sistemas de alta performance.
+      </p>
+
+    </section>
+
+    <!-- Cards -->
+    <section class="levels">
+
+      <article class="level-card">
+
+        <div class="level-card__icon">
+          <span class="material-symbols-outlined">
+            eco
+          </span>
+        </div>
+
+        <span class="level-card__tag">
+          Level 01
+        </span>
+
+        <h3 class="level-card__title">
+          Fácil
+        </h3>
+
+        <p class="level-card__text">
+          Ideal para quem está consolidando a sintaxe básica.
+        </p>
+
+        <button class="level-card__button">
+          Selecionar
+        </button>
+
+      </article>
+
+      <article class="level-card level-card--highlight">
+
+        <span class="level-card__recommended">
+          Recomendado
+        </span>
+
+        <div class="level-card__icon">
+          <span class="material-symbols-outlined">
+            bolt
+          </span>
+        </div>
+
+        <span class="level-card__tag">
+          Level 02
+        </span>
+
+        <h3 class="level-card__title">
+          Moderado
+        </h3>
+
+        <p class="level-card__text">
+          Aprofunde-se em LINQ, Generics e Delegates.
+        </p>
+
+        <button class="level-card__button level-card__button--primary">
+          Selecionar
+        </button>
+
+      </article>
+
+      <article class="level-card">
+
+        <div class="level-card__icon">
+          <span class="material-symbols-outlined">
+            terminal
+          </span>
+        </div>
+
+        <span class="level-card__tag">
+          Level 03
+        </span>
+
+        <h3 class="level-card__title">
+          Avançado
+        </h3>
+
+        <p class="level-card__text">
+          Programação assíncrona profunda e otimização de performance.
+        </p>
+
+        <button class="level-card__button">
+          Selecionar
+        </button>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer__content">
+
+      <section class="footer__brand">
+
+        <h2 class="footer__title">
+          Tech Academy
+        </h2>
+
+        <p class="footer__description">
+          Capacitando servidores e aspirantes à carreira pública.
+        </p>
+
+      </section>
+
+      <nav class="footer__navigation" aria-label="Rodapé">
+
+        <h3 class="footer__subtitle">
+          Navegação
+        </h3>
+
+        <ul class="footer__list">
+
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Certificados</a></li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+    <p class="footer__copyright">
+      © 2026 Tech Academy. Todos os direitos reservados.
+    </p>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="nivel.js"></script>
+
+</body>
+</html>

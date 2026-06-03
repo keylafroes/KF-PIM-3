@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Cursos | Tech Academy</title>
+
+    <link rel="stylesheet" href="./css/cursos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="sidebar__logo">
+            <h1 class="sidebar__title">Tech Academy</h1>
+            <p class="sidebar__subtitle">Plataforma de Estudos</p>
+        </a>
+
+        <nav class="sidebar__navigation" aria-label="Menu lateral">
+
+            <ul class="sidebar__menu">
+
+                <li>
+                    <a href="index.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">home</span>
+                        Tela Inicial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cursos.html" class="sidebar__link sidebar__link--active">
+                        <span class="material-symbols-outlined">school</span>
+                        Meus Cursos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="desempenho.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">analytics</span>
+                        Notas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="forum.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">forum</span>
+                        Fórum
+                    </a>
+                </li>
+
+                <li>
+                    <a href="configuracao.html" class="sidebar__link">
+                        <span class="material-symbols-outlined">settings</span>
+                        Configurações
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <section class="sidebar__support">
+
+            <h2 class="sidebar__support-title">
+                Suporte
+            </h2>
+
+            <button class="sidebar__support-button">
+                Central de Ajuda
+            </button>
+
+        </section>
+
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="layout">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <section class="topbar__left">
+                <h2 class="topbar__title">Meus Cursos</h2>
+            </section>
+
+            <section class="topbar__right">
+
+                <form class="search-form">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <input
+                        type="search"
+                        class="search-form__input"
+                        placeholder="Buscar matérias..."
+                    >
+
+                </form>
+
+                <article class="profile">
+
+                    <div class="profile__info">
+                        <p class="profile__name">
+                            Maria Cecilia
+                        </p>
+
+                        <p class="profile__role">
+                            Desenvolvedora Sênior
+                        </p>
+                    </div>
+
+                    <img
+                        src="https://images.pexels.com/photos/30468665/pexels-photo-30468665.jpeg"
+                        alt="Foto do usuário"
+                        class="profile__image"
+                    >
+                </article>
+
+            </section>
+
+        </header>
+
+        <!-- COURSE SECTION -->
+        <section class="courses">
+
+            <div class="courses__top">
+
+                <div class="courses__heading">
+
+                    <p class="courses__subtitle">
+                        Curriculum Acadêmico
+                    </p>
+
+                    <h2 class="courses__title">
+                        Explore seu Progresso
+                    </h2>
+
+                </div>
+
+                <div class="filter">
+
+                    <button class="filter__button filter__button--active">
+                        Todos
+                    </button>
+
+                    <button class="filter__button">
+                        Iniciados
+                    </button>
+
+                    <button class="filter__button">
+                        Terminados
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- COURSE GRID -->
+            <div class="course-grid">
+
+                <!-- COURSE CARD -->
+                <article class="course-card">
+
+                    <div class="course-card__banner">
+
+                        <img
+                            class="course-card__image"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD17hFwGjEbTpVvD5umjZYRrMsPXLscxb27DDRJk8o4zGPomleg6xchD8eJ7127abml0wVSjrmixTbt4bZC1G-ZYcZEePKG64mD6mJW567Nm6spXXR_lLN9dUM8PR5jvgIKP5luX_QNrKMh9qxLAYysEJ5JtNKIFUlmzlZPNknjm1RWfl53IcMQepZk8wYIOB7X36tAZIWmxOf4ILP9AW38kdS14EUCIhgMtEse9eTBPNPjr78nR0PiTVyVc1WyuE9G2BhYsG0PrGqo"
+                            alt="Curso de Microserviços"
+                        >
+
+                        <span class="course-card__status">
+                            Iniciado
+                        </span>
+
+                    </div>
+
+                    <div class="course-card__content">
+
+                        <div class="course-card__header">
+
+                            <span class="course-card__category">
+                                Arquitetura de Sistemas
+                            </span>
+
+                            <span class="material-symbols-outlined course-card__icon">
+                                cloud
+                            </span>
+
+                        </div>
+
+                        <h3 class="course-card__title">
+                            Microserviços com Kubernetes para Tech
+                        </h3>
+
+                        <p class="course-card__description">
+                            Domine a orquestração de containers em escala governamental.
+                        </p>
+
+                        <div class="course-card__progress">
+
+                            <div class="course-card__progress-info">
+                                <span>PROGRESSO</span>
+                                <span>65%</span>
+                            </div>
+
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" style="width: 65%;"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="course-card__footer">
+
+                        <button class="course-card__button">
+                            CONTINUAR APRENDIZADO
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer__content">
+
+                <div class="footer__brand">
+
+                    <h2 class="footer__title">
+                        Tech Academy
+                    </h2>
+
+                    <p class="footer__description">
+                        Capacitando profissionais com tecnologias modernas.
+                    </p>
+
+                </div>
+
+                <nav class="footer__navigation">
+
+                    <h3 class="footer__subtitle">
+                        Navegação
+                    </h3>
+
+                    <ul class="footer__list">
+
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Certificados</a></li>
+                        <li><a href="#">Contato</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <p class="footer__copyright">
+                © 2026 Tech Academy. Todos os direitos reservados.
+            </p>
+
+        </footer>
+
+    </main>
+
+    <script src="cursos.js"></script>
+
+</body>
+</html>

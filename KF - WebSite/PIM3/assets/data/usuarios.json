@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Carlos Henrique",
+        "cpf": "11111111111",
+        "password": "123456",
+        "role": "admin"
+    },
+
+    {
+        "id": 2,
+        "name": "Fernanda Lima",
+        "cpf": "22222222222",
+        "password": "123456",
+        "role": "coordenador"
+    },
+
+    {
+        "id": 3,
+        "name": "Maria Cecilia",
+        "cpf": "33333333333",
+        "password": "123456",
+        "role": "tutor"
+    },
+
+    {
+        "id": 4,
+        "name": "André Silva",
+        "cpf": "44444444444",
+        "password": "123456",
+        "role": "estudante"
+    }
+]

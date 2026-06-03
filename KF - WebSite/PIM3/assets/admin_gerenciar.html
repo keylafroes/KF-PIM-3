@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerenciar Usuários | Tech Academy</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- MATERIAL ICONS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/admin_gerenciar.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="topbar__brand">
+
+            <h1 class="topbar__logo">
+                Tech Academy
+            </h1>
+
+            <p class="topbar__subtitle">
+                Painel Administrativo
+            </p>
+
+        </div>
+
+        <div class="topbar__actions">
+
+            <form class="search-form">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input
+                    type="search"
+                    class="search-form__input"
+                    placeholder="Buscar usuários..."
+                >
+
+            </form>
+
+            <article class="profile">
+
+                <div class="profile__info">
+
+                    <strong class="profile__name">
+                        Carlos Henrique
+                    </strong>
+
+                    <span class="profile__role">
+                        Administrador
+                    </span>
+
+                </div>
+
+                <img
+                    src="https://randomuser.me/api/portraits/men/52.jpg"
+                    alt="Administrador"
+                    class="profile__image"
+                >
+
+            </article>
+
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="management-panel">
+
+        <!-- HEADER -->
+        <section class="management-header">
+
+            <div>
+
+                <h2 class="management-header__title">
+                    Gerenciar Usuários
+                </h2>
+
+                <p class="management-header__description">
+                    Ative, desative e acompanhe usuários da plataforma.
+                </p>
+
+            </div>
+
+            <a href="admin_cadastrar.html">
+                <button class="new-user-button">
+
+                    <span class="material-symbols-outlined">
+                        person_add
+                    </span>
+
+                    Novo Usuário
+
+                </button>
+            </a>
+
+        </section>
+
+        <!-- FILTROS -->
+        <section class="filters">
+
+            <button class="filter-button filter-button--active">
+                Todos
+            </button>
+
+            <button class="filter-button">
+                Estudantes
+            </button>
+
+            <button class="filter-button">
+                Tutores
+            </button>
+
+            <button class="filter-button">
+                Coordenadores
+            </button>
+
+            <button class="filter-button">
+                Ativos
+            </button>
+
+            <button class="filter-button">
+                Desativados
+            </button>
+
+        </section>
+
+        <!-- TABELA -->
+        <section class="users-table-section">
+
+            <table class="users-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Usuário
+                        </th>
+
+                        <th>
+                            Cargo
+                        </th>
+
+                        <th>
+                            Área
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Ações
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- USUÁRIO -->
+                    <tr>
+
+                        <td>
+
+                            <div class="user-info">
+
+                                <img
+                                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                                    alt="Usuária"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Juliana Costa
+                                    </strong>
+
+                                    <span>
+                                        juliana@techacademy.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            Tutor
+                        </td>
+
+                        <td>
+                            UI/UX
+                        </td>
+
+                        <td>
+
+                            <span class="status-badge status-badge--active">
+                                Ativo
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="action-button action-button--disable">
+
+                                <span class="material-symbols-outlined">
+                                    block
+                                </span>
+
+                                Desativar
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <!-- USUÁRIO -->
+                    <tr>
+
+                        <td>
+
+                            <div class="user-info">
+
+                                <img
+                                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                                    alt="Usuário"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        André Silva
+                                    </strong>
+
+                                    <span>
+                                        andre@techacademy.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            Estudante
+                        </td>
+
+                        <td>
+                            Desenvolvimento Web
+                        </td>
+
+                        <td>
+
+                            <span class="status-badge status-badge--inactive">
+                                Desativado
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="action-button action-button--enable">
+
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+
+                                Ativar
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <!-- USUÁRIO -->
+                    <tr>
+
+                        <td>
+
+                            <div class="user-info">
+
+                                <img
+                                    src="https://randomuser.me/api/portraits/women/45.jpg"
+                                    alt="Usuária"
+                                >
+
+                                <div>
+
+                                    <strong>
+                                        Fernanda Lima
+                                    </strong>
+
+                                    <span>
+                                        fernanda@techacademy.com
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            Coordenadora
+                        </td>
+
+                        <td>
+                            Engenharia de Software
+                        </td>
+
+                        <td>
+
+                            <span class="status-badge status-badge--active">
+                                Ativo
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="action-button action-button--disable">
+
+                                <span class="material-symbols-outlined">
+                                    block
+                                </span>
+
+                                Desativar
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__content">
+
+            <nav class="footer__links">
+
+                <h3>
+                    Suporte / Ajuda
+                </h3>
+
+                <a href="#">
+                    Central de ajuda
+                </a>
+
+                <a href="#">
+                    Fórum de dúvidas
+                </a>
+
+            </nav>
+
+            <nav class="footer__links">
+
+                <h3>
+                    Informações do sistema
+                </h3>
+
+                <a href="#">
+                    Sobre a plataforma
+                </a>
+
+                <a href="#">
+                    Termos de uso
+                </a>
+
+                <a href="#">
+                    Política de privacidade
+                </a>
+
+            </nav>
+
+            <nav class="footer__links">
+
+                <h3>
+                    Conta
+                </h3>
+
+                <a href="#">
+                    Meu perfil
+                </a>
+
+                <a href="#">
+                    Configurações
+                </a>
+
+                <a href="#">
+                    Sair
+                </a>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/admin_gerenciar.js"></script>
+
+</body>
+
+</html>

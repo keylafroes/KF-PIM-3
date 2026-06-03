@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel do Tutor | Tech Academy</title>
+
+    <link rel="stylesheet" href="./css/tutor_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="topbar__brand">
+
+            <h1 class="topbar__logo">
+                Tech Academy
+            </h1>
+
+            <p class="topbar__subtitle">
+                Painel do Tutor
+            </p>
+
+        </div>
+
+        <section class="topbar__right">
+
+            <form class="search-form">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input
+                    type="search"
+                    class="search-form__input"
+                    placeholder="Buscar dúvidas..."
+                >
+
+            </form>
+
+                <article class="profile">
+                    
+                    <div class="profile__info">
+                        <a class="profile__name">
+                            Maria Cecilia
+                        </a>
+                    </div>
+
+                    <img
+                        src="https://images.pexels.com/photos/30468665/pexels-photo-30468665.jpeg"
+                        alt="Foto do usuário"
+                        class="profile__image"
+                    >
+                    
+
+                    <button id="exit__button" class="profile__logout">
+                        <span class="material-symbols-outlined">
+                            exit_to_app
+                        </span>
+                    </button>
+
+            </article>
+
+        </section>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="forum">
+
+        <!-- HERO -->
+        <section class="forum-hero">
+
+            <div class="forum-hero__content">
+
+                <h2 class="forum-hero__title">
+                    Fórum de Dúvidas dos Estudantes
+                </h2>
+
+                <p class="forum-hero__description">
+                    Gerencie perguntas, responda estudantes e acompanhe dúvidas pendentes da plataforma.
+                </p>
+
+            </div>
+
+            <div class="forum-hero__stats">
+
+                <article class="stat-card">
+
+                    <span class="material-symbols-outlined">
+                        pending_actions
+                    </span>
+
+                    <strong>
+                        18
+                    </strong>
+
+                    <p>
+                        Pendentes
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <span class="material-symbols-outlined">
+                        mark_chat_read
+                    </span>
+
+                    <strong>
+                        124
+                    </strong>
+
+                    <p>
+                        Respondidas
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FILTROS -->
+        <section class="forum-filters">
+
+            <button class="filter-button filter-button--active">
+                Todas
+            </button>
+
+            <button class="filter-button">
+                Pendentes
+            </button>
+
+            <button class="filter-button">
+                Respondidas
+            </button>
+
+        </section>
+
+        <!-- LISTA DE DÚVIDAS -->
+        <section class="forum-list">
+
+            <!-- CARD -->
+            <article class="question-card">
+
+                <header class="question-card__header">
+
+                    <div class="question-card__tags">
+
+                        <span class="tag tag--green">
+                            UI/UX
+                        </span>
+
+                        <span class="tag tag--orange">
+                            Pendente
+                        </span>
+
+                    </div>
+
+                    <span class="question-card__date">
+                        Há 25 minutos
+                    </span>
+
+                </header>
+
+                <div class="question-card__content">
+
+                    <h3 class="question-card__title">
+                        Como melhorar a organização visual de um dashboard?
+                    </h3>
+
+                    <p class="question-card__description">
+                        Estou criando um dashboard com muitas informações e gostaria de dicas para deixá-lo mais limpo, organizado e fácil de usar. Quais práticas de UI/UX vocês recomendam?
+                    </p>
+
+                </div>
+
+                <footer class="question-card__footer">
+
+                    <div class="question-card__student">
+
+                        <img
+                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            alt="Foto do estudante"
+                        >
+
+                        <div>
+
+                            <strong>
+                                André Silva
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <button class="reply-button">
+                        Responder
+                    </button>
+
+                </footer>
+
+                <!-- ÁREA DE RESPOSTA -->
+                <section class="reply-box">
+
+                    <textarea
+                        class="reply-box__textarea"
+                        placeholder="Digite sua resposta..."
+                    ></textarea>
+
+                    <div class="reply-box__actions">
+
+                        <button class="tool-button">
+
+                            <span class="material-symbols-outlined">
+                                code
+                            </span>
+
+                            remover esse botao
+
+                        </button>
+
+                        <button class="submit-button">
+                            Publicar Resposta
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </article>
+
+            <!-- CARD -->
+            <article class="question-card">
+
+                <header class="question-card__header">
+
+                    <div class="question-card__tags">
+
+                        <span class="tag tag--green">
+                            UI/UX
+                        </span>
+
+                        <span class="tag tag--blue">
+                            Respondida
+                        </span>
+
+                    </div>
+
+                    <span class="question-card__date">
+                        Ontem
+                    </span>
+
+                </header>
+
+                <div class="question-card__content">
+
+                    <h3 class="question-card__title">
+                        Como melhorar contraste em interfaces dark mode?
+                    </h3>
+
+                    <p class="question-card__description">
+                        Tenho dúvidas sobre acessibilidade e contraste em interfaces escuras.
+                    </p>
+
+                </div>
+
+                <footer class="question-card__footer">
+
+                    <div class="question-card__student">
+
+                        <img
+                            src="https://randomuser.me/api/portraits/women/45.jpg"
+                            alt="Foto da estudante"
+                        >
+
+                        <div>
+
+                            <strong>
+                                Juliana Costa
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <button class="reply-button reply-button--disabled">
+                        Respondida
+                    </button>
+
+                </footer>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <section class="footer__content">
+
+            <div class="footer__brand">
+                <h2 class="footer__logo">
+                    Tech Academy
+                </h2>
+
+                <p class="footer__description">
+                    Plataforma educacional voltada ao desenvolvimento tecnológico e profissional.
+                </p>
+            </div>
+
+
+            <nav class="footer__navigation" aria-label="Links do rodapé">
+
+                <ul class="footer__list">
+
+                    <h3>Ajuda</h3>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Contato</a></li>
+
+                </ul>
+            </nav>
+
+        </section>
+
+        <p class="footer__copyright">
+            © 2026 Tech Academy. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/tutor_script.js"></script>
+
+</body>
+
+</html>
